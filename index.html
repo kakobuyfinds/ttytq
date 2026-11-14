@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ACBuy spreadsheet: categorie, taglie e foto QC</title>
+  <meta name="description" content="Guida italiana all’ACBuy spreadsheet: esplora 10 categorie su HipoBuyFind e scopri come confrontare taglie, foto QC e costi prima di ordinare.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#241e2d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="ACBuy spreadsheet: categorie, taglie e foto QC">
+  <meta property="og:description" content="Dieci categorie di moda e una guida pratica per controllare misure, varianti e costi prima dell’acquisto.">
+  <meta property="og:image" content="https://www.ficegallery.com/cdn/shop/files/AURORA_CW2288-111_PHSLH000-2000.png?v=1751569173&amp;width=720">
+  <meta property="og:image:alt" content="Nike Air Force 1 ’07 bianca vista di lato">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #241e2d;
+      --muted: #5d5365;
+      --paper: #f8f4ee;
+      --white: #fffdf9;
+      --line: #ded5e1;
+      --accent: #f4c586;
+      --violet: #684378;
+      font: 100%/1.6 system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    a { color: inherit; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #ad5618; outline-offset: 4px; }
+    img { display: block; width: 100%; height: auto; }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1, h2, h3 { line-height: 1.13; }
+    h1 { font-size: clamp(2.75rem, 7vw, 6rem); letter-spacing: -.065em; overflow-wrap: anywhere; }
+    h2 { margin-bottom: .9rem; font-size: clamp(1.65rem, 3.5vw, 2.65rem); letter-spacing: -.035em; }
+    h3 { margin-bottom: .55rem; font-size: 1.15rem; }
+    p + p { margin-top: .8rem; }
+    .wrap { width: min(72rem, calc(100% - 2rem)); margin-inline: auto; }
+    .top { background: var(--ink); color: var(--white); }
+    .masthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; padding-block: 1rem; border-bottom: 1px solid #564960; }
+    .masthead a { font-weight: 750; text-underline-offset: .25em; }
+    .masthead p { color: #e5d9ec; font-size: .9rem; }
+    .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(1.25rem, 4vw, 4rem); align-items: center; padding-block: clamp(1.5rem, 5vw, 4rem); }
+    .hero p { max-width: 52ch; margin: 1rem 0 1.25rem; color: #f0e7f3; }
+    .button { display: inline-block; padding: .65rem 1rem; background: var(--accent); color: var(--ink); border-radius: .35rem; font-weight: 750; text-decoration: none; }
+    .button:hover { background: #ffe1b3; }
+    .hero figure { min-width: 0; }
+    .hero img { aspect-ratio: 4 / 3; object-fit: contain; background: #ece3f0; border-radius: .6rem; }
+    figcaption { margin-top: .45rem; font-size: .85rem; }
+    section { padding-block: clamp(1.6rem, 4vw, 3.25rem); border-bottom: 1px solid var(--line); }
+    .categories { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .55rem; padding: 0; margin: 0; list-style: none; }
+    .categories li { display: flex; }
+    .categories a { display: flex; flex: 1; align-items: center; gap: .5rem; justify-content: space-between; padding: .8rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--white); font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+    .categories a:hover { background: #eee1f2; }
+    .categories span { color: var(--violet); }
+    .lede { max-width: 67ch; margin-bottom: 1rem; color: var(--muted); }
+    .gallery, .guides { display: grid; gap: .8rem; }
+    .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .gallery figure { min-width: 0; }
+    .gallery img { aspect-ratio: 1; object-fit: contain; background: #eee7ef; border: 1px solid var(--line); border-radius: .4rem; }
+    .guides { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .guides article { padding: 1.15rem; border-top: .22rem solid var(--violet); background: var(--white); }
+    .guides ul { margin: .7rem 0 0; padding-inline-start: 1.15rem; }
+    .guides li + li { margin-top: .25rem; }
+    .faq { max-width: 52rem; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; padding: .85rem .15rem; font-weight: 750; }
+    details p { padding: 0 .15rem .85rem; }
+    footer { padding-block: 1.15rem 1.8rem; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 55rem) {
+      .categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 38rem) {
+      .hero, .guides { grid-template-columns: 1fr; }
+      .hero img { aspect-ratio: 16 / 9; }
+      .categories, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "inLanguage": "it",
+          "name": "ACBuy spreadsheet: categorie, taglie e foto QC",
+          "description": "Guida italiana all’ACBuy spreadsheet: esplora 10 categorie su HipoBuyFind e scopri come confrontare taglie, foto QC e costi prima di ordinare.",
+          "about": [
+            {"@type": "Thing", "name": "Catalogo ACBuy per categoria"},
+            {"@type": "Thing", "name": "Guida alle taglie per acquisti online"},
+            {"@type": "Thing", "name": "Foto QC prima della spedizione"},
+            {"@type": "Thing", "name": "Spedizione in Italia"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "inLanguage": "it",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Che cos’è un ACBuy spreadsheet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "È una raccolta di schede o link a prodotti, organizzata per facilitare la ricerca e il confronto. Le categorie di questa guida portano al catalogo HipoBuyFind."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Come scelgo la taglia se la scheda usa misure diverse da quelle europee?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Confronta i centimetri della variante con le misure di un capo o di una scarpa che ti calza bene. Usa lo stesso metodo di misurazione indicato nella scheda."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Le foto QC bastano per verificare l’autenticità?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le foto QC servono a controllare dettagli visibili come colore, cuciture e condizioni apparenti. Per verificare l’autenticità, cerca documentazione sulla provenienza e, se serve, una verifica qualificata."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Come stimo il costo totale di una spedizione in Italia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Somma il prezzo del prodotto, le eventuali commissioni e il preventivo di spedizione. Verifica separatamente quali imposte o spese di importazione sono incluse e quali possono essere richieste alla consegna."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Dove trovo disponibilità e condizioni di reso?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Controlla la scheda del venditore per la disponibilità della variante e consulta le condizioni di reso applicabili prima di pagare. Le immagini di questa guida mostrano esempi di stile."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ttytq/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap masthead">
+      <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+      <p>Guida indipendente agli acquisti online</p>
+    </div>
+    <div class="wrap hero">
+      <div>
+        <h1>ACBuy spreadsheet</h1>
+        <p>Uno spreadsheet raccoglie schede e link per confrontare prodotti simili. Parti dalle categorie di HipoBuyFind e verifica misure, varianti e costo di consegna prima di scegliere.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Apri il catalogo HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://www.ficegallery.com/cdn/shop/files/AURORA_CW2288-111_PHSLH000-2000.png?v=1751569173&amp;width=720"
+             width="720" height="540" alt="Nike Air Force 1 ’07 bianca vista di lato"
+             fetchpriority="high" loading="eager">
+        <figcaption>Nike Air Force 1 ’07 · esempio di stile</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="categorie">
+      <h2 id="categorie">Catalogo ACBuy per categoria</h2>
+      <p class="lede">Scegli una categoria per aprire la sezione corrispondente su HipoBuyFind.</p>
+      <nav aria-label="Categorie del catalogo HipoBuyFind">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Scarpe <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Felpe e maglioni <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirt <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Giacche <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantaloni e shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Cappelli e berretti <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Completi <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Intimo <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Maglie sportive <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessori <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="modelli">
+      <h2 id="modelli">Modelli e dettagli da confrontare</h2>
+      <p class="lede">Usa questi esempi di stile per capire quali dettagli chiedere in foto. Per disponibilità, varianti e condizioni consulta la scheda del venditore.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480"
+               width="480" height="480" alt="Giacca Louis Vuitton in denim Monogram vista di fronte"
+               loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton Monogram · denim e chiusura</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/593C916A4511C980_E03-8?wid=480"
+               width="480" height="480" alt="Cappellino nero Dior CD Icon con visiera"
+               loading="lazy" decoding="async">
+          <figcaption>Dior CD Icon · visiera e ricamo</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1739469714/838985_AAE38_1000_001_074_0000_Light-GG-Marmont-large-shoulder-bag.jpg"
+               width="1200" height="1200" alt="Borsa a spalla Gucci GG Marmont nera"
+               loading="lazy" decoding="async">
+          <figcaption>Gucci GG Marmont · borsa e minuteria</figcaption>
+        </figure>
+        <figure>
+          <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png"
+               width="480" height="480" alt="Bracciale Hermès Clic H arancione con chiusura dorata"
+               loading="lazy" decoding="async">
+          <figcaption>Hermès Clic H · smalto e chiusura</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="guide">
+      <h2 id="guide">Guide per scegliere prima di ordinare</h2>
+      <div class="guides">
+        <article>
+          <h3>Guida alle taglie per acquisti online</h3>
+          <p>Confronta la variante che vuoi acquistare con un capo che indossi già. Se la tabella delle taglie riporta le misure del corpo, prendi quelle. Se riporta le misure del capo steso, usa un capo simile.</p>
+          <ul>
+            <li><strong>Lunghezza del piede in centimetri.</strong> Misura entrambi i piedi e confronta il più lungo con la tabella del modello.</li>
+            <li><strong>Larghezza della pianta delle sneaker.</strong> Se la calzata è un dubbio, chiedi anche la larghezza interna.</li>
+            <li><strong>Misura del torace per una felpa.</strong> Verifica se la scheda indica la larghezza da ascella ad ascella oppure la circonferenza.</li>
+            <li><strong>Lunghezza delle maniche di una giacca.</strong> Controlla se la misura parte dalla spalla o dal collo.</li>
+            <li><strong>Misure di vita e interno gamba.</strong> Per i pantaloni confronta entrambi i valori con un paio che ti sta bene.</li>
+            <li><strong>Circonferenza di cappelli e berretti.</strong> Cerca l’intervallo minimo e massimo della chiusura regolabile.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Foto QC prima della spedizione</h3>
+          <p>Le foto di controllo qualità aiutano a verificare l’articolo e la variante prima che il pacco venga spedito. Se un dettaglio decisivo resta fuori dall’inquadratura, chiedi un primo piano.</p>
+          <ul>
+            <li><strong>Foto QC della suola.</strong> Chiedi una vista completa per controllare il battistrada e gli eventuali segni.</li>
+            <li><strong>Foto dell’etichetta della taglia.</strong> Confronta il codice e la misura con la variante scelta.</li>
+            <li><strong>Controllo delle cuciture e degli orli.</strong> Chiedi immagini ravvicinate delle zone più sollecitate.</li>
+            <li><strong>Colore del tessuto alla luce naturale.</strong> Se il colore è determinante, chiedi una foto con luce neutra.</li>
+            <li><strong>Controllo di zip, fibbie e bottoni.</strong> Chiedi come si presentano sia aperti sia chiusi.</li>
+            <li><strong>Misura del bracciale in foto.</strong> Fai verificare la circonferenza interna con un riferimento graduato.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Come leggere una scheda prodotto</h3>
+          <p>Quando confronti due schede, annota il modello, il venditore e la variante esatta. Una galleria può includere diversi tessuti o colori sotto lo stesso titolo.</p>
+          <ul>
+            <li><strong>Ricerca per codice modello.</strong> Usa il codice della variante per distinguere articoli dal nome simile.</li>
+            <li><strong>Composizione del tessuto di una T-shirt.</strong> Cerca le percentuali dichiarate delle fibre sulla scheda o sull’etichetta.</li>
+            <li><strong>Vestibilità delle maglie sportive.</strong> Confronta larghezza e lunghezza della versione specifica.</li>
+            <li><strong>Disponibilità per taglia e colore.</strong> Verifica la combinazione esatta che vuoi ordinare.</li>
+            <li><strong>Condizioni di reso per acquisti online.</strong> Controlla chi gestisce la richiesta, entro quando e con quali costi.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Spedizione in Italia</h3>
+          <p>Confronta il costo di consegna per lo stesso pacco e lo stesso CAP. Chiedi quali voci sono già comprese nel preventivo e salva il riepilogo prima di pagare.</p>
+          <ul>
+            <li><strong>Preventivo di spedizione per CAP italiano.</strong> Usa il CAP di consegna per verificare le opzioni disponibili.</li>
+            <li><strong>Peso volumetrico del pacco.</strong> Controlla se il corriere calcola la tariffa in base alle dimensioni dell’imballo.</li>
+            <li><strong>Conversione del prezzo in euro.</strong> Verifica il totale effettivo proposto dal metodo di pagamento.</li>
+            <li><strong>Imposte e spese di importazione.</strong> Verifica se eventuali importi sono inclusi o richiesti separatamente.</li>
+            <li><strong>Tracciamento internazionale del pacco.</strong> Controlla quale servizio fornisce gli aggiornamenti fino alla consegna.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Domande frequenti</h2>
+      <details open>
+        <summary>Che cos’è un ACBuy spreadsheet?</summary>
+        <p>È una raccolta di schede o link a prodotti, organizzata per facilitare la ricerca e il confronto. Le categorie di questa guida portano al catalogo HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Come scelgo la taglia se la scheda usa misure diverse da quelle europee?</summary>
+        <p>Confronta i centimetri della variante con le misure di un capo o di una scarpa che ti calza bene. Usa lo stesso metodo di misurazione indicato nella scheda.</p>
+      </details>
+      <details>
+        <summary>Le foto QC bastano per verificare l’autenticità?</summary>
+        <p>Le foto QC servono a controllare dettagli visibili come colore, cuciture e condizioni apparenti. Per verificare l’autenticità, cerca documentazione sulla provenienza e, se serve, una verifica qualificata.</p>
+      </details>
+      <details>
+        <summary>Come stimo il costo totale di una spedizione in Italia?</summary>
+        <p>Somma il prezzo del prodotto, le eventuali commissioni e il preventivo di spedizione. Verifica separatamente quali imposte o spese di importazione sono incluse e quali possono essere richieste alla consegna.</p>
+      </details>
+      <details>
+        <summary>Dove trovo disponibilità e condizioni di reso?</summary>
+        <p>Controlla la scheda del venditore per la disponibilità della variante e consulta le condizioni di reso applicabili prima di pagare. Le immagini di questa guida mostrano esempi di stile.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Guida editoriale indipendente. I marchi citati identificano i modelli illustrati.</p>
+    <p><a href="https://www.hipobuyfind.com">Vai a HipoBuyFind</a></p>
+  </footer>
+</body>
+</html>
